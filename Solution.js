@@ -50,7 +50,7 @@ function breadthFirstSearch(setBlocked, source, target) {
                 let nextRow = current.row + move[0];
                 let nextColumn = current.column + move[1];
                 if (isInMatrix(nextRow, nextColumn) && !setVisited.has(hashPoint(nextRow, nextColumn))
-                        && !setBlocked.has(hashPoint(nextRow, nextColumn))) {
+                    && !setBlocked.has(hashPoint(nextRow, nextColumn))) {
                     queue.enqueue(new Point(nextRow, nextColumn));
                     setVisited.add(hashPoint(nextRow, nextColumn));
                 }
