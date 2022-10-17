@@ -36,8 +36,8 @@ public class Solution {
                 for (int[] move : MOVES) {
                     int nextRow = current.row + move[0];
                     int nextColumn = current.column + move[1];
-                    if (isInMatrix(nextRow, nextColumn) && setVisited.add(hashPoint(nextRow, nextColumn))
-                            && !setBlocked.contains(hashPoint(nextRow, nextColumn))) {
+                    if (isInMatrix(nextRow, nextColumn) && setVisited.add(hashPoint(nextRow, nextColumn)) 
+                        && !setBlocked.contains(hashPoint(nextRow, nextColumn))) {
                         queue.add(new Point(nextRow, nextColumn));
                     }
                 }
